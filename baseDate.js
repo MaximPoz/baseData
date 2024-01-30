@@ -1,9 +1,14 @@
+const h1 = document.querySelector("h1");
+
+h1.addEventListener('click', () => h1.textContent = "Удалено"); //! балуюсь
+
+
 function User(name, email) {
     this.name = name;
-    this.email = email;    
+    this.email = email;
 }
 
-User.prototype.printInfo = function (name, email) {
+User.prototype.printInfo = function () {
     return `Имя: ${this.name},  Эл.почта: ${this.email}`
 }
 
@@ -11,12 +16,13 @@ let formatMessage = (users) => {
     let list = document.querySelector(".contactList")
 
 
-
   let usersList = "Список сохраненных пользователей:\n";
 
   for (let i = 0; i < users.length; i++) {
-    // usersList += ` ${users[i].printInfo()}\n`;
     const listItem = document.createElement('li')
+
+    listItem.addEventListener('click', () => listItem.textContent = "Удалено");//! балуюсь
+    
     listItem.textContent = `${users[i].name}  ${users[i].email}`
     list.append(listItem)
   }
