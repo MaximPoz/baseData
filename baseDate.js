@@ -47,4 +47,44 @@ let init = () => {
   });
 };
 
+let createBtn1 = document.querySelector(".create-btn");
+const move = createBtn1.animate(
+  [
+    { transform: "translateX(0px)" },
+    { transform: "translateX(100px)" },
+    { transform: "translateX(0px)" },
+  ],
+  {
+    duration: 3000,
+    iterations: Infinity,
+  }
+)
+
+
+createBtn1.addEventListener("mouseenter", () => {
+  move.pause();
+});
+createBtn1.addEventListener("mouseleave", () => {
+  move.play();
+});
+
+let logo = document.querySelector(".logo");
+const moveLogo = logo.animate(
+  [
+    { transform: "rotate(0deg)" },
+    { transform: "rotate(360deg)" },
+  ],
+  { duration: 3000, iterations: Infinity }
+)
+
+
+
+
+logo.addEventListener("mouseenter", () => {
+  moveLogo.pause();
+});
+logo.addEventListener("mouseleave", () => {
+  moveLogo.play();
+});
+
 init();

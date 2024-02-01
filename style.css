@@ -62,3 +62,10 @@ button:hover {
 .users-list li:hover {
     background-color: #f2f2f2;
 }
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
