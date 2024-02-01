@@ -9,6 +9,13 @@ let func = () => {
             break
         }
     }
+
+    let p = document.createElement('p')
+    p.textContent = `Заработабо!╰(*°▽°*)╯`
+    document.body.append(p)
+
+
+
     alert(`Число ${num} найдено  его интекс ${index}`)
 }
 
