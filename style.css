@@ -2,20 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #000000;
 }
 
 section {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #333;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-    color: #333;
+    color: #0e0e0e;
 }
 
 input {
@@ -27,7 +28,7 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #4caf50;
+    background-color: #952f99;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -67,5 +68,5 @@ button:hover {
 .logo{
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 70%;
 }
